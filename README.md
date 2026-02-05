@@ -19,7 +19,6 @@ This project develops a strategic Power BI dashboard enabling healthcare adminis
   <li><a href="#recommendations">Recommendations</a></li>
   <li><a href="#tools">Tools & Technologies</a></li>
   <li><a href="#concepts">Key Concepts Demonstrated</a></li>
-  <li><a href="#how-to-use">How to Use</a></li>
 </ol>
 
 <hr>
@@ -67,110 +66,114 @@ The project emphasizes industry-aligned Power BI practices, including clean data
 
 <h4>1️⃣ Fact Table</h4>
 
-  <details>
-    <summary><strong>Visits</strong> – click to expand table details</summary>
+<div style="margin-left:30px;">
   
-    <br>
-  
-    <table width="100%">
-      <thead>
-        <tr style="background-color:#2f2f2f; color:white;">
-          <th align="left">Column Name</th>
-          <th align="left">Description</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr style="background-color:#f2f2f2;">
-          <td>Date of Visit</td>
-          <td>Date on which the patient visit occurred.</td>
-        </tr>
-        <tr style="background-color:#e0e0e0;">
-          <td>Patient ID</td>
-          <td>Unique identifier for each patient.</td>
-        </tr>
-        <tr style="background-color:#f2f2f2;">
-          <td>Provider ID</td>
-          <td>Unique identifier for the healthcare provider or doctor consulted.</td>
-        </tr>
-        <tr style="background-color:#e0e0e0;">
-          <td>Department ID</td>
-          <td>Identifier for the department responsible for the visit (e.g., Orthopaedics, Cardiology).</td>
-        </tr>
-        <tr style="background-color:#f2f2f2;">
-          <td>Diagnosis ID</td>
-          <td>Identifier for the primary diagnosis associated with the visit.</td>
-        </tr>
-        <tr style="background-color:#e0e0e0;">
-          <td>Procedure ID</td>
-          <td>Identifier for the medical procedure performed during the visit.</td>
-        </tr>
-        <tr style="background-color:#f2f2f2;">
-          <td>Insurance ID</td>
-          <td>Identifier linking the visit to the patient’s insurance coverage.</td>
-        </tr>
-        <tr style="background-color:#e0e0e0;">
-          <td>Service Type</td>
-          <td>Type of service delivered: Emergency, Inpatient, or Outpatient.</td>
-        </tr>
-        <tr style="background-color:#f2f2f2;">
-          <td>Treatment Cost</td>
-          <td>Cost incurred for medical treatment provided during the visit.</td>
-        </tr>
-        <tr style="background-color:#e0e0e0;">
-          <td>Medication Cost</td>
-          <td>Total cost of medications prescribed or administered.</td>
-        </tr>
-        <tr style="background-color:#f2f2f2;">
-          <td>Follow-up Visit Date</td>
-          <td>Scheduled date for the patient’s follow-up visit, if applicable.</td>
-        </tr>
-        <tr style="background-color:#e0e0e0;">
-          <td>Patient Satisfaction Score</td>
-          <td>Numeric score representing patient-reported satisfaction with the visit.</td>
-        </tr>
-        <tr style="background-color:#f2f2f2;">
-          <td>Referral Source</td>
-          <td>Source through which the patient was referred (e.g., self, physician, external).</td>
-        </tr>
-        <tr style="background-color:#e0e0e0;">
-          <td>Visit Type</td>
-          <td>Classification of visit based on urgency or admission status.</td>
-        </tr>
-        <tr style="background-color:#f2f2f2;">
-          <td>Payment Status</td>
-          <td>Status of payment for the visit (e.g., paid, pending, partially paid).</td>
-        </tr>
-        <tr style="background-color:#e0e0e0;">
-          <td>Discharge Date</td>
-          <td>Date on which the patient was discharged from care.</td>
-        </tr>
-        <tr style="background-color:#f2f2f2;">
-          <td>Admitted Date</td>
-          <td>Date on which the patient was admitted for inpatient care.</td>
-        </tr>
-        <tr style="background-color:#e0e0e0;">
-          <td>Room Type</td>
-          <td>Type of room assigned during inpatient stay.</td>
-        </tr>
-        <tr style="background-color:#f2f2f2;">
-          <td>Insurance Coverage</td>
-          <td>Amount covered by insurance for the visit.</td>
-        </tr>
-        <tr style="background-color:#e0e0e0;">
-          <td>Room Charges</td>
-          <td>Charges associated with room usage during inpatient stay.</td>
-        </tr>
-        <tr style="background-color:#f2f2f2;">
-          <td>Length of Stay</td>
-          <td>Total duration of inpatient stay, calculated in days.</td>
-        </tr>
-      </tbody>
-    </table>
+<details>
+  <summary><strong>Visits</strong> – click to expand table details</summary>
+
+  <br>
+
+  <table width="100%">
+    <thead>
+      <tr style="background-color:#2f2f2f; color:white;">
+        <th align="left">Column Name</th>
+        <th align="left">Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="background-color:#f2f2f2;">
+        <td>Date of Visit</td>
+        <td>Date on which the patient visit occurred.</td>
+      </tr>
+      <tr style="background-color:#e0e0e0;">
+        <td>Patient ID</td>
+        <td>Unique identifier for each patient.</td>
+      </tr>
+      <tr style="background-color:#f2f2f2;">
+        <td>Provider ID</td>
+        <td>Unique identifier for the healthcare provider or doctor consulted.</td>
+      </tr>
+      <tr style="background-color:#e0e0e0;">
+        <td>Department ID</td>
+        <td>Identifier for the department responsible for the visit (e.g., Orthopaedics, Cardiology).</td>
+      </tr>
+      <tr style="background-color:#f2f2f2;">
+        <td>Diagnosis ID</td>
+        <td>Identifier for the primary diagnosis associated with the visit.</td>
+      </tr>
+      <tr style="background-color:#e0e0e0;">
+        <td>Procedure ID</td>
+        <td>Identifier for the medical procedure performed during the visit.</td>
+      </tr>
+      <tr style="background-color:#f2f2f2;">
+        <td>Insurance ID</td>
+        <td>Identifier linking the visit to the patient’s insurance coverage.</td>
+      </tr>
+      <tr style="background-color:#e0e0e0;">
+        <td>Service Type</td>
+        <td>Type of service delivered: Emergency, Inpatient, or Outpatient.</td>
+      </tr>
+      <tr style="background-color:#f2f2f2;">
+        <td>Treatment Cost</td>
+        <td>Cost incurred for medical treatment provided during the visit.</td>
+      </tr>
+      <tr style="background-color:#e0e0e0;">
+        <td>Medication Cost</td>
+        <td>Total cost of medications prescribed or administered.</td>
+      </tr>
+      <tr style="background-color:#f2f2f2;">
+        <td>Follow-up Visit Date</td>
+        <td>Scheduled date for the patient’s follow-up visit, if applicable.</td>
+      </tr>
+      <tr style="background-color:#e0e0e0;">
+        <td>Patient Satisfaction Score</td>
+        <td>Numeric score representing patient-reported satisfaction with the visit.</td>
+      </tr>
+      <tr style="background-color:#f2f2f2;">
+        <td>Referral Source</td>
+        <td>Source through which the patient was referred (e.g., self, physician, external).</td>
+      </tr>
+      <tr style="background-color:#e0e0e0;">
+        <td>Visit Type</td>
+        <td>Classification of visit based on urgency or admission status.</td>
+      </tr>
+      <tr style="background-color:#f2f2f2;">
+        <td>Payment Status</td>
+        <td>Status of payment for the visit (e.g., paid, pending, partially paid).</td>
+      </tr>
+      <tr style="background-color:#e0e0e0;">
+        <td>Discharge Date</td>
+        <td>Date on which the patient was discharged from care.</td>
+      </tr>
+      <tr style="background-color:#f2f2f2;">
+        <td>Admitted Date</td>
+        <td>Date on which the patient was admitted for inpatient care.</td>
+      </tr>
+      <tr style="background-color:#e0e0e0;">
+        <td>Room Type</td>
+        <td>Type of room assigned during inpatient stay.</td>
+      </tr>
+      <tr style="background-color:#f2f2f2;">
+        <td>Insurance Coverage</td>
+        <td>Amount covered by insurance for the visit.</td>
+      </tr>
+      <tr style="background-color:#e0e0e0;">
+        <td>Room Charges</td>
+        <td>Charges associated with room usage during inpatient stay.</td>
+      </tr>
+      <tr style="background-color:#f2f2f2;">
+        <td>Length of Stay</td>
+        <td>Total duration of inpatient stay, calculated in days.</td>
+      </tr>
+    </tbody>
+  </table>
   
   </details>
-
+</div>
 
 <h4>2️⃣ Dimension Tables</h4>
+
+<div style="margin-left:30px;">
 
 <details>
   <summary><strong>Patients</strong> – click to expand table details</summary>
