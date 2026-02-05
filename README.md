@@ -7,7 +7,7 @@ This project develops a strategic Power BI dashboard enabling healthcare adminis
 <p>
 <strong>Author:</strong> Ruchika Yadav<br>
 <strong>Tools Used:</strong> Power BI (Power Query, Data Modelling, DAX, Visualization)<br>
-<strong>Interactive Power BI Dashboard:</strong>
+<strong>LIVE Dashboard:</strong>
 <a href="https://app.powerbi.com/view?r=eyJrIjoiNGFhMjkwM2MtNjEyYS00YWJlLTk1NWQtMTdkOTlhOTZhMjU4IiwidCI6ImNjN2FhMmYzLWMxNjktNGM1MS04NDZkLTdmMWY4MmRhZmMzYiJ9&pageName=c663806f86765ffaa91f" target="_blank">View Here</a>
 </p>
 
