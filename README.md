@@ -1,5 +1,5 @@
 <h1 id="top">Healthcare Performance, Financial Insights & Provider Efficiency Using Power BI</h1>
-
+<img src="Dashboard/Home.png" width="800">
 <p>
 This project develops a strategic Power BI dashboard enabling healthcare administrators and decision-makers to analyze patient trends, financial performance, and provider efficiency. The solution supports data-driven operational and strategic planning through interactive visuals, robust data modelling, and intuitive navigation.
 </p>
@@ -12,13 +12,15 @@ This project develops a strategic Power BI dashboard enabling healthcare adminis
 <hr>
 
 <h2>📌 Table of Contents</h2>
-  <a href="#overview">1. Overview</a>
-  <a href="#data-architecture">2. Data Architecture</a>
-  <a href="#visualizations">3. Visualizations & Key Insights</a>
-  <a href="#recommendations">4. Recommendations</a>
-  <a href="#tools">5. Tools & Technologies</a>
-  <a href="#concepts">6. Key Concepts Demonstrated</a>
-  <a href="#how-to-use">7. How to Use</a>
+<ol>
+  <li><a href="#overview">Overview</a></li>
+  <li><a href="#data-architecture">Data Architecture</a></li>
+  <li><a href="#visualizations">Visualizations & Key Insights</a></li>
+  <li><a href="#recommendations">Recommendations</a></li>
+  <li><a href="#tools">Tools & Technologies</a></li>
+  <li><a href="#concepts">Key Concepts Demonstrated</a></li>
+  <li><a href="#how-to-use">How to Use</a></li>
+</ol>
 
 <hr>
 
@@ -172,62 +174,189 @@ The project emphasizes industry-aligned Power BI practices, including clean data
 <h4>2️⃣ Dimension Tables</h4>
 
 <details>
-  <summary>Patients – click to see details</summary>
-  <ul>
-    <li>Patient ID</li>
-    <li>Age</li>
-    <li>Gender</li>
-    <li>Race</li>
-  </ul>
+  <summary><strong>Patients</strong> – click to expand table details</summary>
+  <br>
+
+  <table width="100%">
+    <thead>
+      <tr style="background-color:#2f2f2f; color:white;">
+        <th align="left">Column Name</th>
+        <th align="left">Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="background-color:#f2f2f2;">
+        <td>Patient ID</td>
+        <td>Unique identifier for each patient.</td>
+      </tr>
+      <tr style="background-color:#e0e0e0;">
+        <td>Patient Name</td>
+        <td>Name of the patient (synthetic/anonymized).</td>
+      </tr>
+      <tr style="background-color:#f2f2f2;">
+        <td>Age</td>
+        <td>Age of the patient at the time of visit.</td>
+      </tr>
+      <tr style="background-color:#e0e0e0;">
+        <td>Gender</td>
+        <td>Gender of the patient.</td>
+      </tr>
+      <tr style="background-color:#f2f2f2;">
+        <td>Race</td>
+        <td>Self-reported race or ethnicity category.</td>
+      </tr>
+      <tr style="background-color:#e0e0e0;">
+        <td>City ID</td>
+        <td>Reference to the city where the patient resides.</td>
+      </tr>
+    </tbody>
+  </table>
+</details>
+
+
+<details>
+  <summary><strong>Providers</strong> – click to expand table details</summary>
+  <br>
+
+  <table width="100%">
+    <thead>
+      <tr style="background-color:#2f2f2f; color:white;">
+        <th align="left">Column Name</th>
+        <th align="left">Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="background-color:#f2f2f2;">
+        <td>Provider ID</td>
+        <td>Unique identifier for each healthcare provider.</td>
+      </tr>
+      <tr style="background-color:#e0e0e0;">
+        <td>Provider Name</td>
+        <td>Name of the doctor or healthcare professional.</td>
+      </tr>
+      <tr style="background-color:#f2f2f2;">
+        <td>Age</td>
+        <td>Age of the healthcare provider.</td>
+      </tr>
+      <tr style="background-color:#e0e0e0;">
+        <td>Gender</td>
+        <td>Gender of the healthcare provider.</td>
+      </tr>
+      <tr style="background-color:#f2f2f2;">
+        <td>Nationality</td>
+        <td>Nationality of the healthcare provider.</td>
+      </tr>
+      <tr style="background-color:#e0e0e0;">
+        <td>Image</td>
+        <td>Public image URL used for visual identification in reports and tooltips.</td>
+      </tr>
+    </tbody>
+  </table>
 </details>
 
 <details>
-  <summary>Providers – click to see details</summary>
-  <ul>
-    <li>Provider ID</li>
-    <li>Doctor Name</li>
-    <li>Specialty</li>
-  </ul>
+  <summary><strong>Departments</strong> – click to expand table details</summary>
+  <br>
+
+  <table width="100%">
+    <thead>
+      <tr style="background-color:#2f2f2f; color:white;">
+        <th align="left">Column Name</th>
+        <th align="left">Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="background-color:#f2f2f2;">
+        <td>Department ID</td>
+        <td>Unique identifier for each hospital department.</td>
+      </tr>
+      <tr style="background-color:#e0e0e0;">
+        <td>Department</td>
+        <td>Name of the department providing care (e.g., Orthopaedics, Cardiology).</td>
+      </tr>
+    </tbody>
+  </table>
 </details>
 
-<details>
-  <summary>Departments – click to see details</summary>
-  <ul>
-    <li>Department ID</li>
-    <li>Department Name</li>
-  </ul>
-</details>
 
 <details>
-  <summary>Cities – click to see details</summary>
-  <ul>
-    <li>City</li>
-    <li>State</li>
-  </ul>
+  <summary><strong>Cities</strong> – click to expand table details</summary>
+  <br>
+
+  <table width="100%">
+    <thead>
+      <tr style="background-color:#2f2f2f; color:white;">
+        <th align="left">Column Name</th>
+        <th align="left">Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="background-color:#f2f2f2;">
+        <td>City ID</td>
+        <td>Unique identifier for each city.</td>
+      </tr>
+      <tr style="background-color:#e0e0e0;">
+        <td>City</td>
+        <td>Name of the city where the healthcare facility or patient is located.</td>
+      </tr>
+      <tr style="background-color:#f2f2f2;">
+        <td>State</td>
+        <td>State or region associated with the city.</td>
+      </tr>
+    </tbody>
+  </table>
 </details>
 
-<details>
-  <summary>Procedures – click to see details</summary>
-  <ul>
-    <li>Procedure Code</li>
-    <li>Procedure Name</li>
-  </ul>
-</details>
 
 <details>
-  <summary>Diagnoses – click to see details</summary>
-  <ul>
-    <li>Diagnosis Code</li>
-    <li>Diagnosis Name</li>
-  </ul>
+  <summary><strong>Procedures</strong> – click to expand table details</summary>
+  <br>
+
+  <table width="100%">
+    <thead>
+      <tr style="background-color:#2f2f2f; color:white;">
+        <th align="left">Column Name</th>
+        <th align="left">Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="background-color:#f2f2f2;">
+        <td>Procedure ID</td>
+        <td>Unique identifier for each medical procedure.</td>
+      </tr>
+      <tr style="background-color:#e0e0e0;">
+        <td>Procedure</td>
+        <td>Name or description of the procedure performed.</td>
+      </tr>
+    </tbody>
+  </table>
 </details>
 
+
 <details>
-  <summary>Service Types – click to see details</summary>
-  <ul>
-    <li>Service Type (Emergency / Inpatient / Outpatient)</li>
-  </ul>
+  <summary><strong>Diagnoses</strong> – click to expand table details</summary>
+  <br>
+
+  <table width="100%">
+    <thead>
+      <tr style="background-color:#2f2f2f; color:white;">
+        <th align="left">Column Name</th>
+        <th align="left">Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="background-color:#f2f2f2;">
+        <td>Diagnosis ID</td>
+        <td>Unique identifier for each medical diagnosis.</td>
+      </tr>
+      <tr style="background-color:#e0e0e0;">
+        <td>Diagnosis</td>
+        <td>Name or classification of the medical condition diagnosed.</td>
+      </tr>
+    </tbody>
+  </table>
 </details>
+
 
 <h4>3️⃣ Date Table</h4>
 <details>
@@ -334,7 +463,7 @@ Healthcare activity is shaped by timing and departmental behavior. Seasonal effe
 <h3>III. Provider Analysis Dashboard</h3>
 <img src="Dashboard/Provider_analysis_v1.png" width="800">
 
-<img src="Dashboard/Provider_analysis_v1.png" width="800">
+<img src="Dashboard/Provider_analysis_v2.png" width="800">
 
 <h4>🔎 Key Insights</h4>
 <ul>
