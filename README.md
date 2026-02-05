@@ -17,7 +17,6 @@ This project develops a strategic Power BI dashboard enabling healthcare adminis
   <li><a href="#data-architecture">Data Architecture</a></li>
   <li><a href="#visualizations">Visualizations & Key Insights</a></li>
   <li><a href="#recommendations">Recommendations</a></li>
-  <li><a href="#tools">Tools & Technologies</a></li>
   <li><a href="#concepts">Key Concepts Demonstrated</a></li>
 </ol>
 
@@ -60,7 +59,7 @@ The project emphasizes industry-aligned Power BI practices, including clean data
 
 <h2 id="data-architecture">📂 Data Architecture</h2>
 
-<p><strong>Schema:</strong> Snowflake schema</p>
+<p><strong>Schema:</strong> Star schema</p>
 
 <h3>Tables Used</h3>
 
@@ -614,24 +613,10 @@ The Date table enables standardized time intelligence and filtering.
 
 <hr>
 
-<h2 id="tools">🛠️ Tools & Technologies</h2>
-<ul>
-  <li>Power BI Desktop</li>
-  <li>Power Query</li>
-  <li>DAX</li>
-  <li>Azure Maps</li>
-  <li>Zebra BI</li>
-  <li>Field Parameters</li>
-  <li>Bookmarks & Buttons</li>
-</ul>
-
-<hr>
-
 <h2 id="concepts">🧠 Key Concepts Demonstrated</h2>
 <ul>
-  <li>Snowflake schema modelling</li>
+  <li>Data modelling</li>
   <li>Date dimensions & time intelligence</li>
-  <li>Context-aware vs context-independent measures</li>
   <li>Dynamic visuals using field parameters</li>
   <li>Cross-filtering & interaction control</li>
   <li>Bookmark-driven navigation and UI design</li>
