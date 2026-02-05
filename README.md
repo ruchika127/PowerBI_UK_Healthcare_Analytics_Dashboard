@@ -54,8 +54,7 @@ The project emphasizes industry-aligned Power BI practices, including clean data
 
 <p>
 <strong>Interactive Power BI Dashboard:</strong>
-<a href="https://app.powerbi.com/view?r=eyJrIjoiNGFhMjkwM2MtNjEyYS00YWJlLTk1NWQtMTdkOTlhOTZhMjU4IiwidCI6ImNjN2FhMmYzLWMxNjktNGM1MS04NDZkLTdmMWY4MmRhZmMzYiJ9&pageName=c663806f86765ffaa91f" target="_blank">View Report</a> |
-<a href="Healthcare_analytics.pbix">Download PBIX</a>
+<a href="https://app.powerbi.com/view?r=eyJrIjoiNGFhMjkwM2MtNjEyYS00YWJlLTk1NWQtMTdkOTlhOTZhMjU4IiwidCI6ImNjN2FhMmYzLWMxNjktNGM1MS04NDZkLTdmMWY4MmRhZmMzYiJ9&pageName=c663806f86765ffaa91f" target="_blank">View Report</a>
 </p>
 
 <hr>
@@ -68,107 +67,107 @@ The project emphasizes industry-aligned Power BI practices, including clean data
 
 <h4>1️⃣ Fact Table</h4>
 
-<details>
-  <summary><strong>Visits</strong> – click to expand table details</summary>
-
-  <br>
-
-  <table width="100%">
-    <thead>
-      <tr style="background-color:#2f2f2f; color:white;">
-        <th align="left">Column Name</th>
-        <th align="left">Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr style="background-color:#f2f2f2;">
-        <td>Date of Visit</td>
-        <td>Date on which the patient visit occurred.</td>
-      </tr>
-      <tr style="background-color:#e0e0e0;">
-        <td>Patient ID</td>
-        <td>Unique identifier for each patient.</td>
-      </tr>
-      <tr style="background-color:#f2f2f2;">
-        <td>Provider ID</td>
-        <td>Unique identifier for the healthcare provider or doctor consulted.</td>
-      </tr>
-      <tr style="background-color:#e0e0e0;">
-        <td>Department ID</td>
-        <td>Identifier for the department responsible for the visit (e.g., Orthopaedics, Cardiology).</td>
-      </tr>
-      <tr style="background-color:#f2f2f2;">
-        <td>Diagnosis ID</td>
-        <td>Identifier for the primary diagnosis associated with the visit.</td>
-      </tr>
-      <tr style="background-color:#e0e0e0;">
-        <td>Procedure ID</td>
-        <td>Identifier for the medical procedure performed during the visit.</td>
-      </tr>
-      <tr style="background-color:#f2f2f2;">
-        <td>Insurance ID</td>
-        <td>Identifier linking the visit to the patient’s insurance coverage.</td>
-      </tr>
-      <tr style="background-color:#e0e0e0;">
-        <td>Service Type</td>
-        <td>Type of service delivered: Emergency, Inpatient, or Outpatient.</td>
-      </tr>
-      <tr style="background-color:#f2f2f2;">
-        <td>Treatment Cost</td>
-        <td>Cost incurred for medical treatment provided during the visit.</td>
-      </tr>
-      <tr style="background-color:#e0e0e0;">
-        <td>Medication Cost</td>
-        <td>Total cost of medications prescribed or administered.</td>
-      </tr>
-      <tr style="background-color:#f2f2f2;">
-        <td>Follow-up Visit Date</td>
-        <td>Scheduled date for the patient’s follow-up visit, if applicable.</td>
-      </tr>
-      <tr style="background-color:#e0e0e0;">
-        <td>Patient Satisfaction Score</td>
-        <td>Numeric score representing patient-reported satisfaction with the visit.</td>
-      </tr>
-      <tr style="background-color:#f2f2f2;">
-        <td>Referral Source</td>
-        <td>Source through which the patient was referred (e.g., self, physician, external).</td>
-      </tr>
-      <tr style="background-color:#e0e0e0;">
-        <td>Visit Type</td>
-        <td>Classification of visit based on urgency or admission status.</td>
-      </tr>
-      <tr style="background-color:#f2f2f2;">
-        <td>Payment Status</td>
-        <td>Status of payment for the visit (e.g., paid, pending, partially paid).</td>
-      </tr>
-      <tr style="background-color:#e0e0e0;">
-        <td>Discharge Date</td>
-        <td>Date on which the patient was discharged from care.</td>
-      </tr>
-      <tr style="background-color:#f2f2f2;">
-        <td>Admitted Date</td>
-        <td>Date on which the patient was admitted for inpatient care.</td>
-      </tr>
-      <tr style="background-color:#e0e0e0;">
-        <td>Room Type</td>
-        <td>Type of room assigned during inpatient stay.</td>
-      </tr>
-      <tr style="background-color:#f2f2f2;">
-        <td>Insurance Coverage</td>
-        <td>Amount covered by insurance for the visit.</td>
-      </tr>
-      <tr style="background-color:#e0e0e0;">
-        <td>Room Charges</td>
-        <td>Charges associated with room usage during inpatient stay.</td>
-      </tr>
-      <tr style="background-color:#f2f2f2;">
-        <td>Length of Stay</td>
-        <td>Total duration of inpatient stay, calculated in days.</td>
-      </tr>
-    </tbody>
-  </table>
-
-</details>
+  <details>
+    <summary><strong>Visits</strong> – click to expand table details</summary>
+  
+    <br>
+  
+    <table width="100%">
+      <thead>
+        <tr style="background-color:#2f2f2f; color:white;">
+          <th align="left">Column Name</th>
+          <th align="left">Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="background-color:#f2f2f2;">
+          <td>Date of Visit</td>
+          <td>Date on which the patient visit occurred.</td>
+        </tr>
+        <tr style="background-color:#e0e0e0;">
+          <td>Patient ID</td>
+          <td>Unique identifier for each patient.</td>
+        </tr>
+        <tr style="background-color:#f2f2f2;">
+          <td>Provider ID</td>
+          <td>Unique identifier for the healthcare provider or doctor consulted.</td>
+        </tr>
+        <tr style="background-color:#e0e0e0;">
+          <td>Department ID</td>
+          <td>Identifier for the department responsible for the visit (e.g., Orthopaedics, Cardiology).</td>
+        </tr>
+        <tr style="background-color:#f2f2f2;">
+          <td>Diagnosis ID</td>
+          <td>Identifier for the primary diagnosis associated with the visit.</td>
+        </tr>
+        <tr style="background-color:#e0e0e0;">
+          <td>Procedure ID</td>
+          <td>Identifier for the medical procedure performed during the visit.</td>
+        </tr>
+        <tr style="background-color:#f2f2f2;">
+          <td>Insurance ID</td>
+          <td>Identifier linking the visit to the patient’s insurance coverage.</td>
+        </tr>
+        <tr style="background-color:#e0e0e0;">
+          <td>Service Type</td>
+          <td>Type of service delivered: Emergency, Inpatient, or Outpatient.</td>
+        </tr>
+        <tr style="background-color:#f2f2f2;">
+          <td>Treatment Cost</td>
+          <td>Cost incurred for medical treatment provided during the visit.</td>
+        </tr>
+        <tr style="background-color:#e0e0e0;">
+          <td>Medication Cost</td>
+          <td>Total cost of medications prescribed or administered.</td>
+        </tr>
+        <tr style="background-color:#f2f2f2;">
+          <td>Follow-up Visit Date</td>
+          <td>Scheduled date for the patient’s follow-up visit, if applicable.</td>
+        </tr>
+        <tr style="background-color:#e0e0e0;">
+          <td>Patient Satisfaction Score</td>
+          <td>Numeric score representing patient-reported satisfaction with the visit.</td>
+        </tr>
+        <tr style="background-color:#f2f2f2;">
+          <td>Referral Source</td>
+          <td>Source through which the patient was referred (e.g., self, physician, external).</td>
+        </tr>
+        <tr style="background-color:#e0e0e0;">
+          <td>Visit Type</td>
+          <td>Classification of visit based on urgency or admission status.</td>
+        </tr>
+        <tr style="background-color:#f2f2f2;">
+          <td>Payment Status</td>
+          <td>Status of payment for the visit (e.g., paid, pending, partially paid).</td>
+        </tr>
+        <tr style="background-color:#e0e0e0;">
+          <td>Discharge Date</td>
+          <td>Date on which the patient was discharged from care.</td>
+        </tr>
+        <tr style="background-color:#f2f2f2;">
+          <td>Admitted Date</td>
+          <td>Date on which the patient was admitted for inpatient care.</td>
+        </tr>
+        <tr style="background-color:#e0e0e0;">
+          <td>Room Type</td>
+          <td>Type of room assigned during inpatient stay.</td>
+        </tr>
+        <tr style="background-color:#f2f2f2;">
+          <td>Insurance Coverage</td>
+          <td>Amount covered by insurance for the visit.</td>
+        </tr>
+        <tr style="background-color:#e0e0e0;">
+          <td>Room Charges</td>
+          <td>Charges associated with room usage during inpatient stay.</td>
+        </tr>
+        <tr style="background-color:#f2f2f2;">
+          <td>Length of Stay</td>
+          <td>Total duration of inpatient stay, calculated in days.</td>
+        </tr>
+      </tbody>
+    </table>
+  
+  </details>
 
 
 <h4>2️⃣ Dimension Tables</h4>
@@ -358,20 +357,80 @@ The project emphasizes industry-aligned Power BI practices, including clean data
 </details>
 
 
-<h4>3️⃣ Date Table</h4>
 <details>
-  <summary>Date Table – click to see details</summary>
-  <ul>
-    <li>Date</li>
-    <li>Year</li>
-    <li>Quarter</li>
-    <li>Month</li>
-    <li>Weekday</li>
-    <li>Week Type (Weekday / Weekend)</li>
-  </ul>
+  <summary><strong>Date Table</strong> – click to expand table details</summary>
+  <br>
+
+  <table width="100%">
+    <thead>
+      <tr style="background-color:#2f2f2f; color:white;">
+        <th align="left">Column Name</th>
+        <th align="left">Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="background-color:#f2f2f2;">
+        <td>Date</td>
+        <td>Calendar date used for time-based analysis; linked to the Date of Visit in the Visits fact table.</td>
+      </tr>
+      <tr style="background-color:#e0e0e0;">
+        <td>Year</td>
+        <td>Calendar year extracted from the date, used for yearly trend analysis.</td>
+      </tr>
+      <tr style="background-color:#f2f2f2;">
+        <td>Month</td>
+        <td>Full month name derived from the date (e.g., January, February).</td>
+      </tr>
+      <tr style="background-color:#e0e0e0;">
+        <td>Month Num</td>
+        <td>Numeric representation of the month (1–12), used for correct chronological sorting.</td>
+      </tr>
+      <tr style="background-color:#f2f2f2;">
+        <td>Week Day</td>
+        <td>Name of the weekday (Monday–Sunday) for daily and operational pattern analysis.</td>
+      </tr>
+      <tr style="background-color:#e0e0e0;">
+        <td>Week Num</td>
+        <td>Week number of the year, supporting week-over-week trend comparisons.</td>
+      </tr>
+      <tr style="background-color:#f2f2f2;">
+        <td>QTR</td>
+        <td>Quarter of the year (Q1–Q4), used for quarterly performance analysis.</td>
+      </tr>
+      <tr style="background-color:#e0e0e0;">
+        <td>Week Type</td>
+        <td>Categorical flag identifying Weekday or Weekend, used to analyze operational demand patterns.</td>
+      </tr>
+    </tbody>
+  </table>
 </details>
 
-<p><em>📸 Screenshot – Data Model </em></p>
+
+<details>
+  <summary><strong>Insurance</strong> – click to expand table details</summary>
+  <br>
+
+  <table width="100%">
+    <thead>
+      <tr style="background-color:#2f2f2f; color:white;">
+        <th align="left">Column Name</th>
+        <th align="left">Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="background-color:#f2f2f2;">
+        <td>Insurance ID</td>
+        <td>Unique identifier for the insurance record.</td>
+      </tr>
+      <tr style="background-color:#e0e0e0;">
+        <td>Insurance Provider</td>
+        <td>Name of the insurance provider covering the patient.</td>
+      </tr>
+    </tbody>
+  </table>
+</details>
+
+<p><em>Data Model </em></p>
 <img src="Dashboard/Entity_relationship_diagram.png" width="800">
 
 <p>
@@ -411,7 +470,7 @@ The Date table enables standardized time intelligence and filtering.
 </ul>
 
 <p><strong>🔑 Executive Takeaway:</strong><br>
-Financial performance reflects a shift from volume-driven outpatient care toward fewer, more cost-intensive encounters, driven by longer stays, higher acuity, and a changing service mix.
+<em>Financial performance reflects a shift from volume-driven outpatient care toward fewer, more cost-intensive encounters, driven by longer stays, higher acuity, and a changing service mix.</em>
 </p>
 
 <hr>
@@ -455,7 +514,7 @@ Financial performance reflects a shift from volume-driven outpatient care toward
 </ul>
 
 <p><strong>🔑 Executive Takeaway:</strong><br>
-Healthcare activity is shaped by timing and departmental behavior. Seasonal effects, weekday dependence, and volatility in surgical specialties contrast with the stability of Paediatrics, reinforcing reliance on weekday-driven operations rather than uniform demand.
+<em>Healthcare activity is shaped by timing and departmental behavior. Seasonal effects, weekday dependence, and volatility in surgical specialties contrast with the stability of Paediatrics, reinforcing reliance on weekday-driven operations rather than uniform demand.</em>
 </p>
 
 <hr>
@@ -583,7 +642,7 @@ Healthcare activity is shaped by timing and departmental behavior. Seasonal effe
 </p>
 
 <p>
-<strong>Learning Reference:</strong> Data With Decision (YouTube)
+<strong>Learning Reference:</strong> Data With Decision
 </p>
 
 <p><a href="#top">⬆ Back to Top</a></p>
