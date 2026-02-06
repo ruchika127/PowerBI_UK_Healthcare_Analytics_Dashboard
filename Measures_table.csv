@@ -1,0 +1,148 @@
+﻿Name,Description,Expression
+% Department,Calculates the share of total billing contributed by the selected department,"
+DIVIDE([Total Billing Amount],
+CALCULATE([Total Billing Amount], ALL(departments[Department]))
+)"
+% Emergency,"Calculates the proportion of Emergency visits, admissions, or outpatients relative to the selected measure","
+    VAR _TotalVisit=
+        CALCULATE(
+            [Total Visit],
+            visits[Visit Type] = ""Emergency""
+            )
+    VAR _Admitted=
+        CALCULATE(
+            [Total Admitted],
+            visits[Visit Type] = ""Emergency""
+            )
+    VAR _Outpatient=
+        CALCULATE(
+            [Total Outpatients],
+            visits[Visit Type] = ""Emergency""
+            )
+    VAR _SwitchMeasures=
+        SWITCH(
+            TRUE(),
+            SELECTEDVALUE(ChangeMeasuresLineChart[ChangeMeasuresLineChart Order])=0,
+            [Total Visit],
+            SELECTEDVALUE(ChangeMeasuresLineChart[ChangeMeasuresLineChart Order])=1,
+            [Total Admitted],
+            [Total Outpatients]
+        )
+    VAR _SwitchVar=
+        SWITCH(
+            TRUE(),
+            SELECTEDVALUE(ChangeMeasuresLineChart[ChangeMeasuresLineChart Order])=0,
+            _TotalVisit,
+            SELECTEDVALUE(ChangeMeasuresLineChart[ChangeMeasuresLineChart Order])=1,
+            _Admitted,
+            _Outpatient
+        )
+
+        RETURN
+            IF(_SwitchVar<_SwitchMeasures,
+            DIVIDE(
+                _SwitchVar,_SwitchMeasures,0
+            ),
+            DIVIDE(_SwitchMeasures,_SwitchVar,0
+            )
+            )"
+% None Emergency,"Calculates the proportion of Non-Emergency visits, admissions, or outpatients relative to the selected measure","
+    VAR _TotalVisit=
+        CALCULATE(
+            [Total Visit],
+            visits[Visit Type] = ""None Emergency""
+            )
+    VAR _Admitted=
+        CALCULATE(
+            [Total Admitted],
+            visits[Visit Type] = ""None Emergency""
+            )
+    VAR _Outpatient=
+        CALCULATE(
+            [Total Outpatients],
+            visits[Visit Type] = ""None Emergency""
+            )
+    VAR _SwitchMeasures=
+        SWITCH(
+            TRUE(),
+            SELECTEDVALUE(ChangeMeasuresLineChart[ChangeMeasuresLineChart Order])=0,
+            [Total Visit],
+            SELECTEDVALUE(ChangeMeasuresLineChart[ChangeMeasuresLineChart Order])=1,
+            [Total Admitted],
+            [Total Outpatients]
+        )
+    VAR _SwitchVar=
+        SWITCH(
+            TRUE(),
+            SELECTEDVALUE(ChangeMeasuresLineChart[ChangeMeasuresLineChart Order])=0,
+            _TotalVisit,
+            SELECTEDVALUE(ChangeMeasuresLineChart[ChangeMeasuresLineChart Order])=1,
+            _Admitted,
+            _Outpatient
+        )
+
+        RETURN
+            IF(_SwitchVar<_SwitchMeasures,
+            DIVIDE(
+                _SwitchVar,_SwitchMeasures,0
+            ),
+            DIVIDE(_SwitchMeasures,_SwitchVar,0
+            )
+            )"
+% Procedure,Calculates the share of total billing attributed to the selected procedure,"
+DIVIDE([Total Billing Amount],
+CALCULATE([Total Billing Amount], ALL(procedures[Procedure]))
+)"
+% R Emergency,Calculates the remaining percentage after Emergency share is accounted for,1.0-[% Emergency] 
+% R None Emergency,Calculates the remaining percentage after Non-Emergency share is accounted for,1.0-[% None Emergency] 
+Active department,Returns the currently selected department in the filter context,SELECTEDVALUE(departments[Department])
+Average Billing amount per visit,Calculates the billing amount per visit by dividing the total billing amount by total number of patients,"DIVIDE([Total Billing Amount],[Total Patients])"
+Average Insurance Coverage,Calculates the average insurance coverage amount per visit,AVERAGE(visits[Insurance Coverage])
+Average Length of Stay,Calculates the average length of stay across all visits,AVERAGE(visits[Length of Stay])
+Average Medication Cost,Calculates the average medication cost per visit,AVERAGE(visits[Medication Cost])
+Average Out-of-Pocket,Calculates the average out-of-pocket cost per patient,"DIVIDE([Out-of-Pocket],[Total Patients])"
+Average Patient Satisfaction Score,Calculates the average patient satisfaction score across all visits,AVERAGE(visits[Patient Satisfaction Score])
+Average Room Charge,Calculates the average room charge per patient,"DIVIDE([Total Room Charges],[Total Patients])"
+Average Treatment Cost,Calculates the average treatment cost per visit,AVERAGE(visits[Treatment Cost])
+Avg Satisfaction Score,Displays the average patient satisfaction score formatted as a label,"
+Var _Score=
+    AVERAGEX(
+        VALUES('visits'[Provider ID]),
+        CALCULATE(AVERAGE(visits[Patient Satisfaction Score]))
+    )
+
+    RETURN
+        ""Avg. Rating: ""&FORMAT(_Score,""0.00"")"
+Blank measure,Placeholder measure used for layout or visual alignment,0
+Out-of-Pocket,Calculates patient out-of-pocket cost as billing minus insurance coverage,[Total Billing Amount]-[Total Insurance Coverage]
+Prev weekday billing amt,Calculates the billing amount for the previous weekday,"
+VAR _CurrentWeekday = SELECTEDVALUE(datetable[Weekday])
+VAR _PreviousWeekday = 
+SWITCH(_CurrentWeekday,
+""Mon"", ""Sun"",
+""Tue"", ""Mon"",
+""Wed"", ""Tue"",
+""Thu"", ""Wed"",
+""Fri"", ""Thu"",
+""Sat"", ""Fri"",
+""Sun"", ""Sat""
+)
+RETURN
+    CALCULATE([Total Billing Amount],
+    datetable[Weekday]= _PreviousWeekday, 
+    ALL(datetable)
+    )   "
+Previous Month Billing amt,Calculates the total billing amount for the previous month,"
+CALCULATE(
+    [Total Billing Amount],
+    DATEADD(datetable[Date],-1,MONTH)
+)"
+Total Admitted,Calculates the total number of admitted patients,[Total Visit]-[Total Outpatients]
+Total Billing Amount,"Calculates total billing as the sum of medication, room, and treatment costs",[Total Medication Cost] + [Total Room Charges] + [Total Treatment Cost]
+Total Insurance Coverage,Calculates the total insurance coverage amount,SUM(visits[Insurance Coverage])
+Total Medication Cost,Calculates the total medication cost across all visits,SUM(visits[Medication Cost])
+Total Outpatients,Calculates the total number of outpatient visits,"CALCULATE([Total Visit], visits[Service Type]=""Outpatient"")"
+Total Patients,Calculates the distinct number of patients,DISTINCTCOUNT(visits[Patient ID])
+Total Room Charges,Calculates total room charges based on daily rate multiplied by length of stay,"sumx(visits, visits[Room Charges(daily rate)] * visits[Length of Stay])"
+Total Treatment Cost,Calculates the total treatment cost across all visits,SUM(visits[Treatment Cost])
+Total Visit,Counts the total number of visits recorded,COUNTROWS(visits)
